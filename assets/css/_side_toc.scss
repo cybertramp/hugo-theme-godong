@@ -1,0 +1,24 @@
+.side-toc {
+    flex: 0 0 $toc-width;
+    font-size: $font-size-12;
+
+    .side-toc-content {
+        width: $toc-width;
+        padding: $padding-16;
+
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    img {
+        height: 1em;
+        width: 1em;
+    }
+
+    nav > ul > li:first-child {
+        margin-top: 0;
+    }
+}

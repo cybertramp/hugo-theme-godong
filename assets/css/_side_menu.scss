@@ -1,0 +1,66 @@
+aside nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+        margin: 1em 0;
+        position: relative;
+    }
+
+    a {
+        display: block;
+    }
+
+    a:hover {
+        opacity: 0.5;
+    }
+
+    ul {
+        padding-inline-start: $padding-16;
+    }
+}
+
+.side-menu {
+    flex: 0 0 $menu-width;
+    font-size: $font-size-14;
+
+    .side-menu-content {
+        width: $menu-width;
+        padding: $padding-16;
+        background: var(--body-background);
+
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    a,
+    label {
+        color: inherit;
+        cursor: pointer;
+        word-wrap: break-word;
+    }
+
+    a.active {
+        color: var(--color-link);
+    }
+
+    input.toggle + label + ul {
+        display: none;
+    }
+
+    input.toggle:checked + label + ul {
+        display: block;
+    }
+
+    input.toggle + label::after {
+        content: "▸";
+    }
+
+    input.toggle:checked + label::after {
+        content: "▾";
+    }
+}

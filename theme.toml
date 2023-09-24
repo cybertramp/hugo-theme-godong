@@ -1,0 +1,12 @@
+name = "godong"
+license = "MIT"
+licenselink = "https://github.com/cybertramp/hugo-theme-godong/blob/master/LICENSE"
+description = "Simple hugo theme for blog"
+homepage = "https;//cybertramp.net"
+tags = ["blog", "clean", "simple", "writting"]
+features = ["blog", "archives"]
+min_version = "0.41.0"
+
+[author]
+  name = "cybertramp"
+  homepage = "https://cybertramp.net"

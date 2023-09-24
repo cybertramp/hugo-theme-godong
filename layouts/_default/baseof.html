@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+    <main class="container">
+        <aside class="side-menu">
+            <div class="side-menu-content">
+                {{- partial "side_menu" . -}}
+            </div>
+        </aside>
+        <div class="content-block">
+            {{- block "main" . }}
+            <article class="markdown">
+                {{- .Content -}}
+            </article>
+            {{- end }}
+        </div>
+        <aside class="side-toc">
+            <div class="side-toc-content">
+                {{- partial "side_toc" . -}}
+            </div>
+        </aside>
+    </main>
+
+</body>
+
+</html>
